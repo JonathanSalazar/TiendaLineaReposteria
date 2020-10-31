@@ -1,0 +1,89 @@
+<html>
+	<head>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../html/index.html">Inicio  <img src="../img/inicio.png" width="25" height="25" alt="inicio"></a></li></a></li>      
+                <li><a href="https://www.facebook.com/">Facebook   <img src="../img/facebook.png" width="25" height="25" alt="facebook"></a></li>
+                <li><a href="#">¿Quienes Somos?  <img src="../img/personas.png" width="25" height="25" alt="Sobre nosotros"></a></li>
+                <li><a href="#">Contacto  <img src="../img/contacto.png" width="25" height="25" alt="Contacto"></a></li>
+                <li><a href="../html/punto_venta2.html">Punto de venta <img src="../img/venta.png" width="25" height="25" alt="Formulario"></a></li>
+                </ul>
+            </nav>
+            </div>
+    <title>Caja registradora</title>
+    <link rel="stylesheet" type="text/css" href="../css/style2.css" media="screen" />
+    </head>
+	<body>
+        
+        <form target="_self">
+            <div>
+                <h1>Reposteria</h1>
+                <h3>Añade un producto:</h3>
+            </div>
+            <div>
+                <label for="categoria">Producto:</label>
+                    <select name="categoria" required>
+                        <option value="">Seleccione un producto …</option>
+                        <option value="Galleta">Galleta</option>
+                        <option value="Gelatina">Gelatina</option>
+                        <option value="Flan">Flan</option>
+                    </select>
+            </div>
+            
+<!--             <div id="sabores">
+                <p><strong>Sabores que ofrecemos</strong></p>
+                <h6>Galletas: Chocolate y Fresa</h6>
+                <h6>Gelatina: Fresa, Limon, Uva, Cereza y piña</h6>
+                <h6>Sabores que ofrecemos</h6>
+                <h6>Sabores que ofrecemos</h6>
+            </div> -->
+            
+            <!-- <div>
+                <label for="sabor">Sabor:</label>
+                <input name="sabor" id="sabor" class="input" type="text" required>
+            </div> -->
+
+            <div>
+                <label for="sabor">Sabor:</label>
+                    <select name="sabor" required>
+                        <option value="">Seleccione un producto …</option>
+                        <option value="Chocolate">Chocolate</option>
+                        <option value="Fresa">Fresa</option>
+                        <option value="Limon">Limon</option>
+                        <option value="Uva">Uva</option>
+                        <option value="Piña">Piña</option>
+                    </select>
+            </div>
+            
+            <div>
+                <label for="cantidad">Cantidad:</label>
+                <input name="cantidad" id="cantidad" class="input" type="number" min=1 max=100 required>
+            </div>
+
+            <div>
+                <input type="radio" name="size" id="small" value="pequeño" checked><label for="small">Pequeño</label>
+<!--                 <input type="radio" name="size" id="medium" value="mediano"><label for="medium">Mediano (5)</label> -->
+                <input type="radio" name="size" id="big" value="grande"><label for="big">Grande</label>
+            </div>
+
+            <div>
+                <strong>Complementos:</strong><br>
+                <input type="checkbox" id="nuez" name="nuez" value="nuez"><label for="nuez">Nuez</label><br>
+                <input type="checkbox" id="chocolate" name="chocolate" value="chocolate"><label for="chocolate">Chispas de Chocolate</label><br>
+                <input type="checkbox" id="chispas" name="chispas" value="chispas"><label for="chispas">Chispas de Colores</label><br>
+                <input type="checkbox" id="cajeta" name="cajeta" value="cajeta"><label for="cajeta">Cajeta</label><br>
+            </div>
+
+            <div>
+                <input type="submit" id="send-button" name="send-button" class="button">
+                <input type="reset" value="Borrar" class="button">
+            </div>
+        </form>
+            <div class="container" id="container">
+                <input type="button" id="finish" class="button" value="Completar Compra">
+            </div>
+    </body>
+    <script src="../js/punto_venta2.js"></script>
+    
+</html>

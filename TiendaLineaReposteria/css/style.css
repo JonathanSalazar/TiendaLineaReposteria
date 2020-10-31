@@ -1,0 +1,136 @@
+/* Inicio de seccion de la vista */
+h1
+    { color: teal; font-family: Verdana; }
+h2
+        { color: rgb(151, 50, 155); font-family: Verdana; }
+h3
+    { color: rgb(28, 196, 140); font-family: Verdana; }
+h4 
+    { color: orange; font-family: Verdana; }
+
+body {color: rgb(0, 0, 0); font-family: Verdana;}
+
+body {background-color: rgb(124, 91, 121);}
+
+li {
+        float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3ca1e0;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(54, 92, 124);
+    color: rgb(0, 0, 0);
+}
+
+td, th{
+    background-color: rgb(178, 208, 228);
+    padding: 1px 1px;
+    border : 1px solid rgb(175, 175, 175);
+}
+
+footer {
+    background-color: #2a86be;
+    position: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+/* Fin de seccion de la vista */
+
+
+/* Inicio de seccion del Catalogo */
+.wrap1 {
+	width: 90%;
+	max-width: 1000px;
+	background:rgb(124, 91, 121);
+}
+
+.widget1 {
+	width: 50%;
+	margin: 2em;
+	background: rgb(54, 92, 124);
+}
+/* Fin de seccion del Catalogo */
+
+
+/* Inicio de seccion del Formulario */
+.nombre_producto {
+	background: rgb(200, 196, 211);
+	color: rgb(0, 0, 0);
+}
+
+.departamento {
+	background: rgb(200, 196, 211);
+	color: rgb(0, 0, 0)
+}
+
+.precio {
+	background: rgb(200, 196, 211);
+	color: rgb(0, 0, 0);
+}
+/* Fin de seccion del Formulario */
+
+
+/* Inicio de seccion del Reloj */
+.wrap {
+	width: 90%;
+	max-width: 1000px;
+	background:rgb(124, 91, 121);
+}
+
+.widget {
+	width: 50%;
+	margin: 2em;
+	background: rgb(124, 91, 121);
+}
+
+.widget p {
+	display: inline-block;
+	line-height: 1em;
+}
+
+.fecha {
+	font-family: Oswald, Arial;
+	text-align: center;
+	font-size:1.5em;
+	margin-bottom: 0.3125rem;
+	background: rgba(0,0,0,.5);
+	padding: 20px;
+	width: 70%;
+}
+
+.reloj {
+	font-family: Oswald, Arial;
+	width: 70%;
+	padding: 20px;
+	font-size: 4em;
+	text-align: center;
+	background: rgba(0,0,0,.5);
+}
+
+.reloj .caja-segundos {
+	display: inline-block;
+}
+
+.reloj .segundos,
+.reloj .ampm {
+	font-size: 2rem;
+	display: block;
+}
+/* Fin de seccion del Reloj */

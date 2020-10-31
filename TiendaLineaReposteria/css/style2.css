@@ -1,0 +1,135 @@
+body {background-color: rgb(124, 91, 121);}
+
+li {
+        float: left;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3ca1e0;
+}
+
+li a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(54, 92, 124);
+    color: rgb(0, 0, 0);
+}
+
+td, th{
+    background-color: rgb(178, 208, 228);
+    padding: 1px 1px;
+    border : 1px solid rgb(175, 175, 175);
+}
+
+footer {
+    background-color: #2a86be;
+    position: center;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+}
+
+body {
+    display:grid;
+    grid-template-colums: repeat(12,100px);
+    /*grid-template-rows: 64px 1fr 1fr;*/
+    grid-auto-rows: 1fr;
+}
+h1{
+    display: flex;
+    justify-content:center ;
+}
+.card{
+    border-radius: 4px;
+    width: 90%;
+    height: auto;
+    background: #8a367f;
+    padding:8px;
+    margin: 16px;
+    display:flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border: 2px solid rgb(96, 35, 102);
+}
+form{
+    display:block;
+    padding: 16px;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background: #30708a;
+    border-radius: 8px 8px 0 0;
+}
+form div{
+    margin: 8px 0;
+}
+.input, select{
+    width:100%;
+}
+.container{
+    grid-column: 3/12;
+    grid-row: 1/3;
+    background: #661a60;
+    display:flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-direction:column;
+}
+.button{
+    width:100%;
+    height: 40px;
+    margin: 4px;
+    outline: none;
+    border: none;
+    border-radius: 32px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+input[type=&quot;submit&quot;]{
+    background: #2de65b;
+}
+input[type=&quot;reset&quot;], input[type=&quot;button&quot;]{
+    background: #e62b5a;
+    color:#fff;
+}
+#finish{
+    display: none;
+    margin: 16px 0;
+    background: #3d2268;
+    color: #000;
+    width: 90%;
+}
+@media (max-width: 480px){
+    .body{
+        display:grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: 1fr;
+    }
+    form{
+        display:block;
+        padding:16px;
+        grid-column: 1;
+        grid-row: 1;
+        background: #16ffff;
+        border: 2px solid #176afe;
+    }
+    .container{
+        grid-column: 1;
+        grid-row: 2;
+        background: #ffff0e;
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: flex-start;
+     }
+} 
